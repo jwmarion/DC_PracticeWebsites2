@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey</title>
+  </head>
+  <style media="screen">
+
+    body{
+      background-image: url("./media/blueprint.gif");
+    }
+    form{
+      /*margin-left: 40%;*/
+    }
+    .robot{
+      float: right;
+    }
+    .robot img{
+      height: 90vh;
+    }
+    .question{
+      clear: left;
+      float: left;
+      display: inline-block;
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 6px;
+      margin: 10px;
+      width: 250px;
+      background-color: lightgrey;
+    }
+    .submit{
+      padding-top: 10px;
+      clear: left;
+      float: left;
+      width: 40px;
+      height: 15px;
+      clear: both;
+    }
+    .submit button{
+      width: 275px;
+      height: 25px;
+      margin-left: 10px;
+      border: 2px solid black;
+      border-radius: 6px;
+
+    }
+    .nav{
+
+      width: 100vw;
+      background-color: lightgrey;
+      margin: 0px;
+      padding: 0px;
+      height: 4vh;
+      float: left;
+      border: 2px black solid;
+      border-radius: 6px;
+      font-size: 1.5em;
+    }
+    .leftNav{
+      float: left;
+      padding-left: 10px;
+    }
+    .rightNav{
+      float: right;
+      padding-right: 10px;
+
+    }
+  </style>
+
+  <body>
+    <div class="nav">
+        <div class="leftNav">
+          Survey
+        </div>
+        <div class="rightNav">
+          James Marion
+        </div>
+    </div>
+
+    <div class="robot">
+      <img src="./media/robot.jpg" alt="">
+
+    </div>
+
+    <form class="" action="submit.php" method="post">
+
+
+      <!-- name -->
+      <div class="question name">
+      <label for="name">What is your name?</label>
+        <input type="text" name="name" value="">
+      </div>
+
+      <!-- gender -->
+      <div class="question gender">
+
+      <label for="gender">What is your gender?<br></label>
+        <label for="male">Male?</label>
+          <input type="radio" name="gender" value="male">
+        <label for="female">Female?</label>
+          <input type="radio" name="gender" value="female">
+    </div>
+
+
+      <!-- password -->
+      <div class="question password">
+      <label for="password">What is your password?</label>
+        <input type="password" name="password" value="">
+      </div>
+
+      <!-- food -->
+      <div class="question food">
+      <label for="food">Choose which foods you like.<br></label>
+        <label>
+            <input type="checkbox" name="tacos" value="on">Tacos.
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="rice" value="on">Fried Rice.
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="catfish" value="on">Catfish.
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="sandwiches" value="on">Sandwiches.
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="burgers" value="on">Burgers.
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="fries" value="on">Fries.
+        </label>
+      </div>
+        <!-- OS -->
+        <div class="question os">
+        <label for="">What OS do you like?
+          <select class="" name="os">
+            <option value="windows">Windows</option>
+            <option value="osx">OSX</option>
+            <option value="linux">Linux</option>
+            <option value="plan9">Plan 9</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+      </div>
+
+
+        <!-- other -->
+        <div class="question other">
+        <label for="">Any other questions?
+          <textarea name="other">Enter a comment.</textarea>
+        </label>
+
+      </div>
+        <!-- submit button -->
+        <div class="submit">
+      <button type="submit">Submit</button>
+
+
+
+    </div>
+  </form>
+  </body>
+</html>
